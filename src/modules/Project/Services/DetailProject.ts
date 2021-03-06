@@ -13,8 +13,8 @@ export default class DetailProject {
     private projectRepository: IProjectRepository,
   ) {}
 
-  public async execute(id: string): Promise<Project | undefined> {
-    const project = await this.projectRepository.findOneProjectId(id);
+  public async execute(data: any): Promise<Project | undefined> {
+    const project = await this.projectRepository.findOneProject(data);
 
     if (!project) {
       throw new AppError('Project not exist.');

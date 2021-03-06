@@ -19,8 +19,8 @@ export default class ProjectRepository implements IProjectRepository {
     return allProject;
   }
 
-  public async findOneProjectId(id: string): Promise<Project | undefined> {
-    const oneProject = this.ormRepository.findOne({ where: { id } });
+  public async findOneProject(data: any): Promise<Project | undefined> {
+    const oneProject = this.ormRepository.findOne(data);
 
     return oneProject;
   }
@@ -31,8 +31,12 @@ export default class ProjectRepository implements IProjectRepository {
     return oneProject;
   }
 
-  public async create({ name, user_id }: IProjectDTO): Promise<Project> {
-    const project = this.ormRepository.create({ name, user_id });
+  public async create({
+    name,
+    navers,
+    user_id,
+  }: IProjectDTO): Promise<Project> {
+    const project = this.ormRepository.create({ name, navers, user_id });
 
     await this.ormRepository.save(project);
 
