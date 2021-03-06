@@ -102,4 +102,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Dificuldades 
 
-OS endpoints de detalhes dos navers e projetos não ficou como deveria. Trabalhei para relacionar as tabelas entre si mas não obtive êxito. Estudarei mais a documentação do MYSQL para melhorar esta parte do projeto.
+1. Fazer com o que o sistema filtrasse com parte do valor e não o valor completo.
+2. Relacionar as tabelas pivô entre si.
+3. Retorna error no cadastro caso os id dos projects ou navers fossem invalido.
