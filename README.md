@@ -93,9 +93,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Arquivo Insomnia para teste
 
-* Faça download do arquivo e importe em seu Insomnia.
+- **[Documentação Insomnia](https://navedexs.vercel.app/)**
 
-- [Insominia](./Insomnia_Navedex.json)
+* Ou se preferir faça download do arquivo e importe em seu Insomnia.
+
+- [Aquivo Insominia](./Insomnia_Navedex.json)
 
 ## Dificuldades 
 
