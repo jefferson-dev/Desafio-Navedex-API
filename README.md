@@ -67,14 +67,14 @@ $ cd Desafio-Navedex-API
 
 # Instale as dependências
 $ npm install
-  ou
+# ou
 $ yarn
 
 # Edite o arquivo .env com as informações do seu banco de dados
 
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev
-  ou
+# ou
 $ yarn dev
 
 # O servidor inciará na porta:3333 podendo ser alterada - acesse http://localhost:3000
