@@ -1,6 +1,7 @@
 import { injectable, inject } from 'tsyringe';
 
 import INaverRepository from '@modules/Naver/repositories/INaverRepository';
+
 import Naver from '@modules/Naver/infra/typeorm/entities/Navers';
 
 import AppError from '@shared/errors/AppError';
@@ -31,10 +32,16 @@ export default class UpdateProject {
     user_id,
     projects,
   }: Request): Promise<Naver> {
-    const naver = await this.naverRepository.findOneNaver(id);
+    const naver = await this.naverRepository.findNaver({
+      where: { id },
+    });
 
-    if (!naver) {
-      throw new AppError('Naver not found');
+    if (!naver?.name) {
+      throw new AppError('Nave not found');
+    }
+
+    if (naver?.user_id !== user_id) {
+      throw new AppError('This nave does not belong to you');
     }
 
     naver.name = name;

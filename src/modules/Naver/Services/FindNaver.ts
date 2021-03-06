@@ -12,8 +12,8 @@ export default class FindProject {
   ) {}
 
   public async execute(data: any): Promise<Naver[] | undefined> {
-    const project = this.naverRepository.findAllNaver(data);
+    const naver = await this.naverRepository.findAllNaver(data);
 
-    return project;
+    return naver;
   }
 }

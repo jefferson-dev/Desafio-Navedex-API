@@ -86,10 +86,11 @@ export default class NaverController {
 
   public async delete(request: Request, response: Response): Promise<Response> {
     const { id } = request.params;
+    const user_id = request.user.id;
 
     const deleteNaver = container.resolve(DeleteNaver);
 
-    await deleteNaver.execute(id);
+    await deleteNaver.execute({ id, user_id });
 
     return response.json({
       message: `Project deletado com sucesso.`,

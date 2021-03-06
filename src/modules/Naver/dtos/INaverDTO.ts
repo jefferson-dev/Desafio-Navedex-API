@@ -1,6 +1,8 @@
 export interface IFindNaver {
   where: {
-    name: string;
+    id?: string;
+    name?: string;
+    user_id?: string;
   };
 }
 

@@ -1,7 +1,9 @@
 import { getRepository, Repository } from 'typeorm';
 
 import INaverRepository from '@modules/Naver/repositories/INaverRepository';
-import { INaverDTO } from '@modules/Naver/dtos/INaverDTO';
+
+import { INaverDTO, IFindNaver } from '@modules/Naver/dtos/INaverDTO';
+
 import Naver from '@modules/Naver/infra/typeorm/entities/Navers';
 
 export default class ProjectRepository implements INaverRepository {
@@ -21,6 +23,12 @@ export default class ProjectRepository implements INaverRepository {
     const oneNaver = this.ormRepository.findOne(data);
 
     return oneNaver;
+  }
+
+  public async findNaver(data: IFindNaver): Promise<Naver | undefined> {
+    const naver = this.ormRepository.findOne(data);
+
+    return naver;
   }
 
   public async create({
@@ -50,6 +58,6 @@ export default class ProjectRepository implements INaverRepository {
   }
 
   public async delete(id: string): Promise<void> {
-    this.ormRepository.delete(id);
+    await this.ormRepository.delete(id);
   }
 }
