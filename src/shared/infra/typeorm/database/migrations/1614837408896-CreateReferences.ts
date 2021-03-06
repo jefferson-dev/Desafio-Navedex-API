@@ -69,7 +69,7 @@ export default class CreateReferences1614837408896
     );
 
     await queryRunner.createForeignKey(
-      'navers_projects_projects',
+      'projects_navers_navers',
       new TableForeignKey({
         name: 'foreign_project_projects_pivot',
         columnNames: ['projectsId'],
@@ -81,7 +81,7 @@ export default class CreateReferences1614837408896
     );
 
     await queryRunner.createForeignKey(
-      'navers_projects_projects',
+      'projects_navers_navers',
       new TableForeignKey({
         name: 'foreign_project_navers_pivot',
         columnNames: ['naversId'],
@@ -95,11 +95,11 @@ export default class CreateReferences1614837408896
 
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.dropForeignKey(
-      'navers_projects_projects',
+      'projects_navers_navers',
       'foreign_project_navers_pivot',
     );
     await queryRunner.dropForeignKey(
-      'navers_projects_projects',
+      'projects_navers_navers',
       'foreign_project_projects_pivot',
     );
     await queryRunner.dropForeignKey(
