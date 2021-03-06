@@ -1,5 +1,4 @@
 ## Desafio de back-end - Navedex API 
----
 
 ## O projeto
 
