@@ -63,16 +63,21 @@ $ git clone https://github.com/jefferson-dev/Desafio-Navedex-API.git
 $ cd Desafio-Navedex-API
 
 # Instale as dependências
-$ npm install
-# ou
 $ yarn
+# ou
+$ npm install
 
 # Edite o arquivo .env com as informações do seu banco de dados
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev
+# Rode as migrations para criar as tabelas em seu banco de dados.
+$ yarn typeorm migration:run
 # ou
+$ npm run typeorm migration:run
+
+# Execute a aplicação em modo de desenvolvimento
 $ yarn dev
+# ou
+$ npm run dev
 
 # O servidor inciará na porta:3333 podendo ser alterada - acesse http://localhost:3000
 
