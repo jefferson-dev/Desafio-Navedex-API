@@ -1,9 +1,9 @@
 ## Desafio de back-end - Navedex API 
+---
 
 ## O projeto
 
 #### O sistema consiste em um criador de navedex's, nele tu poderá se cadastrar utilizando email e senha, e então ao logar terá acesso ao banco de dados dos seus navers, possuindo informações como: nomes, data de nascimento, cargos, tempo de empresa e projetos que participou.
----
 
 ## Funções
 
@@ -38,7 +38,6 @@
     - (Update) Rota Para Atualização de Projeto
 
     - (Delete) Rota Para Deletar um Projeto
----
 
 ## Execução o projeto
 
@@ -80,8 +79,6 @@ $ yarn dev
 
 ```
 
----
-
 ## Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
@@ -94,7 +91,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)**
 -   **[bcrypt](https://www.npmjs.com/package/bcrypt)**
 -   **[dotENV](https://www.npmjs.com/package/dotenv)**
----
 
 ## Arquivo Insomnia para teste
 - [Insominia](./Insomnia_Navedex.json)
