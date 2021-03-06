@@ -92,6 +92,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[dotENV](https://www.npmjs.com/package/dotenv)**
 
 ## Arquivo Insomnia para teste
+
+* Faça download do arquivo e importe em seu Insomnia.
+
 - [Insominia](./Insomnia_Navedex.json)
 
 ## Dificuldades 
