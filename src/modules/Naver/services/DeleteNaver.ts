@@ -10,7 +10,7 @@ interface Request {
 }
 
 @injectable()
-export default class DeleteProject {
+export class DeleteNaver {
   constructor(
     @inject('NaverRepository')
     private naverRepository: INaverRepository,

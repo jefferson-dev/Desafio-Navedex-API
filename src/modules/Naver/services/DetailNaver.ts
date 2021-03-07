@@ -7,7 +7,7 @@ import Naver from '@modules/Naver/infra/typeorm/entities/Navers';
 import AppError from '@shared/errors/AppError';
 
 @injectable()
-export default class DetailProject {
+export class DetailNaver {
   constructor(
     @inject('NaverRepository')
     private naverRepository: INaverRepository,

@@ -5,7 +5,7 @@ import INaverRepository from '@modules/Naver/repositories/INaverRepository';
 import Naver from '@modules/Naver/infra/typeorm/entities/Navers';
 
 @injectable()
-export default class FindProject {
+export class FindNaver {
   constructor(
     @inject('NaverRepository')
     private naverRepository: INaverRepository,

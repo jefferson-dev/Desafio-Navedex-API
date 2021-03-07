@@ -1,11 +1,13 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import FindNaver from '@modules/Naver/services/FindNaver';
-import DetailNaver from '@modules/Naver/services/DetailNaver';
-import CreateNaver from '@modules/Naver/services/CreateNaver';
-import UpdateNaver from '@modules/Naver/services/UpdateNaver';
-import DeleteNaver from '@modules/Naver/services/DeleteNaver';
+import {
+  FindNaver,
+  DetailNaver,
+  CreateNaver,
+  UpdateNaver,
+  DeleteNaver,
+} from '@modules/Naver/services';
 
 export default class NaverController {
   public async index(request: Request, response: Response): Promise<Response> {
@@ -93,7 +95,7 @@ export default class NaverController {
     await deleteNaver.execute({ id, user_id });
 
     return response.json({
-      message: `Project deletado com sucesso.`,
+      message: `Naver deletado com sucesso.`,
     });
   }
 }

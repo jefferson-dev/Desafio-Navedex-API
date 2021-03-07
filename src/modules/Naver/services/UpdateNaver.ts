@@ -17,7 +17,7 @@ interface Request {
 }
 
 @injectable()
-export default class UpdateProject {
+export class UpdateNaver {
   constructor(
     @inject('NaverRepository')
     private naverRepository: INaverRepository,

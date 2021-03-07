@@ -9,7 +9,7 @@ import { INaverDTO } from '@modules/Naver/dtos/INaverDTO';
 import AppError from '@shared/errors/AppError';
 
 @injectable()
-export default class CreateProject {
+export class CreateNaver {
   constructor(
     @inject('NaverRepository')
     private naverRepository: INaverRepository,
