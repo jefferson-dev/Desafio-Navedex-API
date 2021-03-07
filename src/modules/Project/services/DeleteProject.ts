@@ -10,7 +10,7 @@ interface Request {
 }
 
 @injectable()
-export default class DeleteProject {
+export class DeleteProject {
   constructor(
     @inject('ProjectRepository')
     private projectRepository: IProjectRepository,

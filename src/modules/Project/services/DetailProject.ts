@@ -7,7 +7,7 @@ import Project from '@modules/Project/infra/typeorm/entities/Projects';
 import AppError from '@shared/errors/AppError';
 
 @injectable()
-export default class DetailProject {
+export class DetailProject {
   constructor(
     @inject('ProjectRepository')
     private projectRepository: IProjectRepository,

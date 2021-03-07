@@ -5,7 +5,7 @@ import IProjectRepository from '@modules/Project/repositories/IProjectRepository
 import Project from '@modules/Project/infra/typeorm/entities/Projects';
 
 @injectable()
-export default class FindProject {
+export class FindProject {
   constructor(
     @inject('ProjectRepository')
     private projectRepository: IProjectRepository,

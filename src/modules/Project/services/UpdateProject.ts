@@ -14,7 +14,7 @@ interface Request {
 }
 
 @injectable()
-export default class UpdateProject {
+export class UpdateProject {
   constructor(
     @inject('ProjectRepository')
     private projectRepository: IProjectRepository,

@@ -9,7 +9,7 @@ import { IProjectDTO } from '@modules/Project/dtos/IProjectDTO';
 import AppError from '@shared/errors/AppError';
 
 @injectable()
-export default class CreateProject {
+export class CreateProject {
   constructor(
     @inject('ProjectRepository')
     private projectRepository: IProjectRepository,

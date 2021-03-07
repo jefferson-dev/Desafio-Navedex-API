@@ -1,11 +1,13 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import FindProject from '@modules/Project/services/FindProject';
-import DetailProject from '@modules/Project/services/DetailProject';
-import CreateProject from '@modules/Project/services/CreateProject';
-import UpdateProject from '@modules/Project/services/UpdateProject';
-import DeleteProject from '@modules/Project/services/DeleteProject';
+import {
+  FindProject,
+  DetailProject,
+  CreateProject,
+  UpdateProject,
+  DeleteProject,
+} from '@modules/Project/services';
 
 export default class ProjectController {
   public async index(request: Request, response: Response): Promise<Response> {
