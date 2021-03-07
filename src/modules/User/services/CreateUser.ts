@@ -12,7 +12,7 @@ interface Request {
 }
 
 @injectable()
-export default class CreateUser {
+export class CreateUser {
   constructor(
     @inject('UserRepository')
     private userRepository: IUserRepository,

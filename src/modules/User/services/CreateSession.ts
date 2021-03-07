@@ -15,7 +15,7 @@ interface Request {
 }
 
 @injectable()
-export default class CreateSession {
+export class CreateSession {
   constructor(
     @inject('UserRepository')
     private userRepository: IUserRepository,
