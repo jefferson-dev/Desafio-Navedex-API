@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import FindNaver from '@modules/Naver/service/FindNaver';
-import DetailNaver from '@modules/Naver/service/DetailNaver';
-import CreateNaver from '@modules/Naver/service/CreateNaver';
-import UpdateNaver from '@modules/Naver/service/UpdateNaver';
-import DeleteNaver from '@modules/Naver/service/DeleteNaver';
+import FindNaver from '@modules/Naver/services/FindNaver';
+import DetailNaver from '@modules/Naver/services/DetailNaver';
+import CreateNaver from '@modules/Naver/services/CreateNaver';
+import UpdateNaver from '@modules/Naver/services/UpdateNaver';
+import DeleteNaver from '@modules/Naver/services/DeleteNaver';
 
 export default class NaverController {
   public async index(request: Request, response: Response): Promise<Response> {

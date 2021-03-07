@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import CreateUser from '@modules/User/service/CreateUser';
+import CreateUser from '@modules/User/services/CreateUser';
 
 export default class UserController {
   public async store(request: Request, response: Response): Promise<Response> {
